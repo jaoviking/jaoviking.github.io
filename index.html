@@ -31,9 +31,13 @@
             font-family: "PlaylistScript";
             src: url("assets/playlist-script-font.otf");
         }
+		html {
+			border: none;
+		}
 
         body {
-            font-family: "PlaylistScript";
+			border: none;
+            font-family: PlaylistScript;
             background-color: #282726;
             text-align: center;
             color: white;
@@ -88,6 +92,40 @@
             max-width: 400px;
             max-height: 400px;
         }
+
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.youtube-video-frame {
+				width: 90%;
+			}
+		}
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.youtube-video-frame {
+				width: 80%;
+			}
+		}
+
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+			.youtube-video-frame {
+				width: 60%;
+			}
+		}
+
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			.youtube-video-frame {
+				width: 800px;
+				height: 500px;
+			}
+		}
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		/* @media only screen and (min-width: 1200px) {} */
+
+
     </style>
 </head>
 
@@ -108,7 +146,7 @@
             <img src="assets/emagrecimento.JPG" alt="comparativo antes e depois de vencer a obesidade" class="photo">
 
             <div style="margin: 20px; text-align: left;">
-                
+
                 <p>
                     Emagreci mais de 60kg em menos de 1 ano sem precisar de:
                     <ul>
@@ -128,15 +166,35 @@
                 <p>
                     Como eu consegui?
                     <br />
-                    <b>Mudando a forma de pensar! Eu venci a obesidade mudando a cabeça!</b>
+                    <b>Segue nas redes sociais ai em baixo que te conto tudo!</b>
                 </p>
-                
+
             </div>
-            
+
         </div>
     </div>
 
     <div>
+        <img src="assets/line.png" class="divisor" alt="divisor de area">
+    </div>
+
+	<div>
+		<h2 style="color: white; font-size: 40px; margin-top: 0px;">
+			Eu recomendo este curso para você que quer emagrecer!
+		</h2>
+		<iframe class="youtube-video-frame" src="https://www.youtube.com/embed/JTeOFC_g02Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<br>
+		<div class="flex-container">
+			<a href="https://go.hotmart.com/A51526761X?dp=1" target="_blank" class="button">
+				<div class="flex-container">
+					<img src="assets/axe.png" alt="" class="button-image">
+					<span class="button-text">Quero este curso!</span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div>
         <img src="assets/line.png" class="divisor" alt="divisor de area">
     </div>
 
@@ -148,18 +206,12 @@
             </div>
 
         </a>
-        <a href="https://www.youtube.com/channel/UCCazDZ5B30ga_HdnyC9SguA" target="_blank" class="button">
+        <a href="https://www.tiktok.com/@jao.viking" target="_blank" class="button">
             <div class="flex-container">
-                <img src="assets/youtube.png" alt="" class="button-image">
-                <span class="button-text">Youtube</span>
+                <img src="assets/tik-tok.png" alt="" class="button-image">
+                <span class="button-text">TikTok</span>
             </div>
-        </a>
-        <a href="https://www.facebook.com/jaoviking/" target="_blank"
-            class="button">
-            <div class="flex-container">
-                <img src="assets/facebook.png" alt="" class="button-image">
-                <span class="button-text">Facebook</span>
-            </div>
+
         </a>
         <a href="https://drive.google.com/drive/folders/1m8LWeiXx1N72cMIyCG7vDqIp2i3YOT36?usp=sharing" target="_blank"
             class="button">
